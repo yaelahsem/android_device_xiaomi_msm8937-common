@@ -2,3 +2,5 @@ allow system_server radio_prop:property_service set;
 
 # Smartcharging
 allow system_server sysfs_battery_supply:file { getattr open read write };
+
+r_dir_file(system_server, keylayout_file_sysfs)
